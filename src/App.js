@@ -1,7 +1,6 @@
-const App = () => {
-  return (
-    <h1>hellow World</h1>
-  );
-}
+import Routes from './routes';
+import './styles/global.css'
+
+const App = () => <Routes />
 
 export default App;

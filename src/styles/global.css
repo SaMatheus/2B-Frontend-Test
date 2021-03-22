@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #111111;
+  --grey: #747474;
+  --yellow: #ffd919	;
+}
+
+body > * {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'kern' 1;
+  font-kerning: normal;
+}
+
+body {
+  background-color: var(--white);
+}
+
+section {
+  padding: 5rem 15rem;
+}
+
+body,
+input,
+button {
+  font: 16px Montserrat, sans-serif;
+  color: var(--black);
+}
+
+a {
+  color: var(--black);
+  text-decoration: none 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 1025px) {
+  section {
+    padding: 5rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  section {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  section {
+    padding: 1rem;
+  }
+}
