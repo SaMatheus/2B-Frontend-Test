@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 // ICONS
-import { IoIosFingerPrint } from "react-icons/io";
+import { IoIosFingerPrint } from 'react-icons/io'
 
 const Header = () => {
   return (
