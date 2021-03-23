@@ -61,5 +61,9 @@ const Container = styled.div`
     /* Box Model */
     justify-content: space-between;
     max-width: 500px;
+
+    a {
+      font-size: 1.2rem;
+    }
   }
 `

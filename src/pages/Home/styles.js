@@ -10,7 +10,7 @@ export const Carrousel = styled.div`
   /* Box Model */
   display: flex;
   align-items: center;
-  height: 100%;
+  height: 80vh;
   width: 100%;
   margin-top: 1rem;
 `
@@ -21,7 +21,7 @@ export const LeftContent = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  height: 50%;
+  height: 100%;
   width: 50%;
 
   h1,
@@ -70,7 +70,18 @@ export const LeftContent = styled.div`
   }
 `
 
-export const RightContent = styled.div``
+export const RightContent = styled.div`
+  /* Box Model */
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 70%;
+  }
+`
 
 export const Features = styled.section`
   /* Box Model */
@@ -134,7 +145,73 @@ export const FeatureObj = styled.div`
 export const InputContainer = styled.section`
   /* Box Model */
   min-height: 60vh;
+  padding: 7rem 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 
   /* Visual */
   background: var(--black);
+  color: var(--white);
+
+  h1 {
+    color: var(--yellow);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  div:nth-last-child(2) {
+    /* Box Model */
+    height: 60px;
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Position */
+    position: relative;
+
+    input,
+    button {
+      height: 100%;
+      border-radius: 6px;
+      border: 0;
+    }
+
+    input {
+      width: 78%;
+      padding: 0 2rem;
+      margin-right: 1rem;
+      font-size: 1.2rem;
+      &::-webkit-input-placeholder {
+        font-size: 1rem;
+      }
+    }
+    button {
+      width: 20%;
+      text-transform: uppercase;
+      font-weight: bold;
+      background: var(--yellow);
+    }
+
+    span {
+      /* Position */
+      position: absolute;
+      bottom: -50px;
+      color: red;
+      
+      transform: translateY(-50%);
+    }
+  }
+
+  div:nth-last-child(1){
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 280px;
+    max-width: 300px;
+  }
 `

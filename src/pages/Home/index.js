@@ -22,10 +22,18 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
 const Home = () => {
-  const [inputvalue, setInputValue] = useState()
+  const [inputValue, setInputValue] = useState('')
+  const [error, setError] = useState(false)
+
+  const emailIsValid = (str) => {
+    let pattern = new RegExp(/^[a-z0-9.]+@[a-z0-9]+\.[a-z]/i);
+    return !!pattern.test(str);
+  };
 
   const handleSubmit = () => {
-    if ()
+    const emailValidation = emailIsValid(inputValue);
+
+    emailValidation ? alert('Email registered successfully!') : setError(true)
   }
 
   return (
@@ -47,7 +55,9 @@ const Home = () => {
             <AiFillWindows />
           </div>
         </LeftContent>
-        <RightContent></RightContent>
+        <RightContent>
+          <img src="icons/ipad.png" alt=""/>
+        </RightContent>
       </Carrousel>
     </Main>
     <Features>
@@ -71,16 +81,27 @@ const Home = () => {
       </FeatureList>
     </Features>
     <InputContainer>
+        <div>
         <h1>Keep in touch whit us</h1>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-          when an unknown printer took.
+          Lorem Ipsum has been the industry's.
         </p>
+        </div>
         <div>
         <input type="text" placeholder="Enter your email to update" onChange={({target}) => setInputValue(target.value)}/>
         <button type="submit" onClick={handleSubmit}>submit</button>
+        {!!error && inputValue !== '' 
+        ? <span>This does not look like an email</span> 
+        : !!error && inputValue === '' 
+        ? <span>Fill in the field</span> 
+        : '' }
         </div>
-        
+        <div>
+          <a href="https://facebook.com" target='_blank'><img src="icons/facebook ico.png" alt="facebook"/></a>
+          <a href="https://twitter.com" target='_blank'><img src="icons/twitter ico.png" alt="twitter"/></a>
+          <a href="https://googleplus.com" target='_blank'><img src="icons/google + ico.png" alt="google +"/></a>
+          <a href="https://pinterest.com" target='_blank'><img src="icons/pinterest ico.png" alt="pinterest"/></a>
+        </div>
     </InputContainer>
     <Footer />
   </>
