@@ -120,8 +120,8 @@ export const FeatureObj = styled.div`
     /* Box Model */
     margin-right: 1.5rem;
     align-self: flex-start;
-    height: 40px;
-    width: 50px;
+    height: 30px;
+    width: 40px;
   }
 
   div {
