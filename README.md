@@ -12,34 +12,35 @@ Página estática com um input para receber os e-mails cadastrados.
 ## Installation
 
 OS X & Linux:
-
+```
 sh
 npm install my-crazy-module --save
+```
 
 Windows:
-
+```
 sh
 edit autoexec.bat
-
+```
 
 ## Development setup
 
 Para começa ra rodar a aplicação realize o seguinte comando:
 
-npm install ou yarn
+```npm install``` ou ```yarn```
 
 Após a instalação do node_modules rode:
 
-npm run start ou yarn start
+```npm run start``` ou ```yarn start```
 
 
 ## Meta
 
-Matheus Fernandes de Sá – [@YourLinkedin](https://www.linkedin.com/in/matheus-f-4a5732b4/) – matehus.sa.alves@outlook.com
+Matheus Fernandes de Sá – [@MatheusSá](https://www.linkedin.com/in/matheus-f-4a5732b4/) – matehus.sa.alves@outlook.com
 
 Distributed under the XYZ license. See ``LICENSE`` for more information.
 
-[https://github.com/yourname/github-link](https://github.com/dbader/)
+[https://github.com/samatheus/github-link](https://github.com/dbader/)
 
 ## Contributing
 
