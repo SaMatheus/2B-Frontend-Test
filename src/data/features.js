@@ -14,7 +14,7 @@ const FeaturesData = [
   {
     id: 3,
     icon: 'icons/icon-font-2.png',
-    title: 'Font Awesome Icons',
+    title: 'Font Awesome Icons ',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
   },
   {

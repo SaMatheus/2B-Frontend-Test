@@ -266,7 +266,7 @@ export const InputContainer = styled.section`
     align-items: center;
     min-width: 280px;
     max-width: 300px;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
   }
 
   @media screen and (max-width: 1450px) {
@@ -279,6 +279,13 @@ export const InputContainer = styled.section`
   @media screen and (max-width: 770px) {
     padding: 3rem 2rem;
     min-height: 40vh;
+    p {
+      font-size: .8rem;
+    }
+  }
+  @media screen and (max-width: 770px) {
+    padding: 3rem 2rem;
+    min-height: 60vh;
     p {
       font-size: .8rem;
     }
