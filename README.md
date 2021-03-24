@@ -1,7 +1,8 @@
 # 2B-Frontend-Test
-> Short blurb about what your product does.
+>  Teste para a vaga de Front-end Júnior
 
 [![NPM Version][npm-image]][npm-url]
+[![YARN Version][yarn-image]][yarn-url]
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
