@@ -2,11 +2,10 @@
 >  Teste para a vaga de Front-end Júnior
 
 [![NPM Version][npm-image]][npm-url]
-[![YARN Version][yarn-image]][yarn-url]
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-One to two paragraph statement about your product and what it does.
+Página estática com um input para receber os e-mails cadastrados.
 
 ![](header.png)
 
@@ -14,49 +13,29 @@ One to two paragraph statement about your product and what it does.
 
 OS X & Linux:
 
-```sh
+sh
 npm install my-crazy-module --save
-```
 
 Windows:
 
-```sh
+sh
 edit autoexec.bat
-```
 
-## Usage example
-
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
-
-_For more examples and usage, please refer to the [Wiki][wiki]._
 
 ## Development setup
 
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
+Para começa ra rodar a aplicação realize o seguinte comando:
 
-```sh
-make install
-npm test
-```
+npm install ou yarn
 
-## Release History
+Após a instalação do node_modules rode:
 
-* 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
-    * CHANGE: Remove `setDefaultXYZ()`
-    * ADD: Add `init()`
-* 0.1.1
-    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
-* 0.1.0
-    * The first proper release
-    * CHANGE: Rename `foo()` to `bar()`
-* 0.0.1
-    * Work in progress
+npm run start ou yarn start
+
 
 ## Meta
 
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
+Matheus Fernandes de Sá – [@YourLinkedin](https://www.linkedin.com/in/matheus-f-4a5732b4/) – matehus.sa.alves@outlook.com
 
 Distributed under the XYZ license. See ``LICENSE`` for more information.
 
