@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const Main = styled.section`
   /* Visual */
   background: var(--yellow);
-
 `
 
 export const Carrousel = styled.div`
@@ -12,7 +11,20 @@ export const Carrousel = styled.div`
   align-items: center;
   height: 80vh;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 4rem;
+
+  @media screen and (max-width: 1025px) {
+    height: 100%;
+  }
+  @media screen and (max-width: 770px) {
+    min-height: 100%;
+  }
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    height: 100%;
+    padding: 5rem 0;
+    margin: 0;
+  }
 `
 
 export const LeftContent = styled.div`
@@ -68,6 +80,28 @@ export const LeftContent = styled.div`
       font-size: 50px;
     }
   }
+
+  @media screen and (max-width: 680px) {
+    width: 100%;
+    h1 {
+      width: 100%;
+      font-size: 1.9rem;
+    }
+    h3 {
+      width: 100%;
+    }
+    div {
+      max-width: 150px;
+      min-width: 0;
+      svg {
+        font-size: 30px;
+      }
+    }
+  }
+  @media screen and (max-width: 330px) {
+    align-items: center;
+    text-align: center;
+  }
 `
 
 export const RightContent = styled.div`
@@ -80,6 +114,9 @@ export const RightContent = styled.div`
   align-items: center;
   img {
     width: 70%;
+  }
+  @media screen and (max-width: 680px) {
+   display: none; 
   }
 `
 
@@ -100,6 +137,10 @@ export const Features = styled.section`
     max-width: 900px;
     color: var(--grey);
   }
+
+  @media screen and (max-width: 700px) {
+    padding: 4rem 1rem;
+  }
 `
 
 export const FeatureList = styled.div`
@@ -108,6 +149,18 @@ export const FeatureList = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   margin-top: 7rem;
+
+  @media screen and (max-width: 1450px) {
+    margin-top: 5rem;
+  }
+  @media screen and (max-width: 770px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 610px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 4rem;
+  }
 `
 
 export const FeatureObj = styled.div`
@@ -213,5 +266,45 @@ export const InputContainer = styled.section`
     align-items: center;
     min-width: 280px;
     max-width: 300px;
+    margin-top: 3rem;
+  }
+
+  @media screen and (max-width: 1450px) {
+    padding: 4rem 15rem;
+    min-height: 70vh;
+  }
+  @media screen and (max-width: 1025px) {
+    padding: 7rem 15rem;
+  }
+  @media screen and (max-width: 770px) {
+    padding: 3rem 2rem;
+    min-height: 40vh;
+    p {
+      font-size: .8rem;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    padding: 3rem 1rem;
+    min-height: 70vh;
+    div:nth-last-child(2) {
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+      input, button {
+        width: 100%;
+        height: 50px;
+      }
+      input {
+        margin: 0;
+        margin-bottom: 1rem;
+        font-size: .8rem;
+      }
+    }
+  }
+  @media screen and (max-width: 380px) {
+    min-height: 80vh;
+  }
+  @media screen and (max-width: 330px) {
+    min-height: 100vh;
   }
 `

@@ -33,7 +33,12 @@ const Home = () => {
   const handleSubmit = () => {
     const emailValidation = emailIsValid(inputValue);
 
-    emailValidation ? alert('Email registered successfully!') : setError(true)
+    if(emailValidation) {
+      setError(false)
+      alert('Email registered successfully!')
+    } else {
+      setError(true)
+    }
   }
 
   return (

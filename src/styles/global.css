@@ -68,8 +68,14 @@ button {
 }
 
 /* RESPONSIVE STYLES */
+@media (max-width: 1450px) {
+  section {
+    padding: 5rem 12rem;
+  }
+}
 @media screen and (max-width: 1025px) {
   section {
+    min-height: 0;
     padding: 5rem;
   }
 }

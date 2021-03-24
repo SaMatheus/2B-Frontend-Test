@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import styled from 'styled-components'
 
 // ICONS
@@ -13,11 +13,11 @@ const Header = () => {
           <h1>tinyone</h1>
         </a>
       </div>
-      <div>
+      <div class="menuBar">
         <a href="">Features</a>
         <a href="">Support</a>
         <a href="">Blog</a>
-      </div>
+      </div>      
     </Container>
   )
 }
@@ -57,13 +57,40 @@ const Container = styled.div`
     }
   }
 
-  div:nth-child(2) {
+  .menuBar {
     /* Box Model */
+    width: 50%;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     max-width: 500px;
 
     a {
       font-size: 1.2rem;
+    }
+
+    svg {
+      /* Box Model */
+      width: 1.5rem;
+      margin: 0;
+      display: none;
+
+      /* Position */
+      position: absolute;
+      top: .8rem;
+      right: 1rem;
+
+      /* Visual */
+      color: var(--white);
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+
+    .menuBar {
+      margin-top: 2rem;
+      width: 100%;
     }
   }
 `

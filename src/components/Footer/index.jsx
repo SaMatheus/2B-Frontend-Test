@@ -60,4 +60,26 @@ const Container = styled.div`
       margin-bottom: .2rem;
     }
   }
+  @media screen and (max-width: 1025px) {
+    padding: 7rem ;
+  }
+  @media screen and (max-width: 770px) {
+    padding: 1rem;
+    height: 100%;
+    justify-content: center;
+
+    div {
+      p {
+        margin-bottom: .8rem;
+      }
+    }
+
+    div:nth-last-child(1),
+    div:nth-last-child(2),
+    div:nth-last-child(3),
+    div:nth-last-child(4) {
+      display: none;
+    }
+  }
+    
 `
